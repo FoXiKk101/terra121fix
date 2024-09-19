@@ -107,17 +107,17 @@ public class EarthBiomeProvider extends BiomeProvider {
                 if(clim.temp<5)
                     return Biomes.COLD_TAIGA;
                 else if(clim.temp>15)
-                    return Biomes.SWAMPLAND;
+                    return Biomes.PLAINS;
                 return Biomes.FOREST;
 
             case 16: case 17: case 18: case 19:
                 if(clim.temp<15) {
                     if (clim.temp < 0)
                         return Biomes.COLD_TAIGA;
-                    return Biomes.SWAMPLAND;
+                    return Biomes.PLAINS;
                 }
                 if(clim.temp > 20)
-                    return Biomes.SWAMPLAND;
+                    return Biomes.PLAINS;
                 return Biomes.FOREST;
 
             case 29: case 30: case 31: case 32: case 33:
@@ -152,7 +152,7 @@ public class EarthBiomeProvider extends BiomeProvider {
                 return Biomes.PLAINS;
 
             case 13: case 40: case 71: case 80: case 95: case 98:
-                return Biomes.SWAMPLAND;
+                return Biomes.PLAINS;
 
             case 81: case 83: case 84: case 86:
                 return Biomes.FOREST;
